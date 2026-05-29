@@ -62,6 +62,16 @@ This handbook pushes context into durable artifacts:
 
 The result is a workflow where expensive reasoning models clarify the work, and cheaper or focused models execute bounded tasks.
 
+## Planning and Specification Support
+
+Planning and specification work benefit from structured reasoning.
+
+In my own workflow, I use the Superpowers skill system to support brainstorming, plan writing, specification drafting, and specification review.
+
+This is where expensive reasoning is most valuable.
+
+Execution should receive a refined handover, not the entire brainstorming history.
+
 ## Recommended Reading Order
 
 Start here if you want to copy the workflow into your own project.
