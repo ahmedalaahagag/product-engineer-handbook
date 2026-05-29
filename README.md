@@ -1,6 +1,6 @@
 # Product Engineer Handbook
 
-From idea to shipped product with efficient tokens, controlled context, and strong engineering ownership.
+A field manual from building Suvo: from idea to shipped product with efficient tokens, controlled context, and strong engineering ownership.
 
 This handbook documents a practical operating model for AI-assisted product engineering. It is designed for builders who want to use AI for planning, specification, implementation, review, and delivery without turning the project into one giant chat session.
 
@@ -9,6 +9,18 @@ The goal:
 > Move from rough idea to real product through lanes, brainstorming, plans, specs, tickets, handovers, verification, human review, and persistent project memory.
 
 AI is leverage. The engineer remains accountable.
+
+## Origin
+
+This handbook is based on my experience building [Suvo](https://getsuvo.com), a real supplement tracking product, as a solo product engineer using AI-assisted workflows.
+
+Suvo forced this workflow into existence.
+
+The project involved multiple repos, mobile and backend work, product decisions, app-store review, marketing, release planning, verification, and limited time. A single long-running AI chat was not enough. I needed lanes, specs, tickets, handovers, deterministic verification, archives, and persistent project memory.
+
+This repository is the cleaned-up version of that system.
+
+It is not theory. It is a field manual from building a real product while trying to control cost, context, quality, and execution.
 
 ## What You Gain
 
