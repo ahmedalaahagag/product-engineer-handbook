@@ -2,7 +2,7 @@
 
 A field manual from building software as a Staff Engineer at a tech company and as a solo developer across multiple projects: from idea to shipped product with efficient tokens, controlled context, and strong engineering ownership.
 
-This handbook documents a practical operating model for AI-assisted product engineering. It is designed for builders who want to use AI for planning, specification, implementation, review, and delivery without turning the project into one giant chat session.
+This handbook documents a practical operating model for AI-assisted product engineering. It is designed mainly for multi-repo products where planning, product decisions, execution, verification, and project memory need to stay coordinated without turning one AI chat into the source of truth.
 
 The goal:
 
