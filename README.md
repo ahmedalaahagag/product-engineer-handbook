@@ -1,6 +1,6 @@
 # Product Engineer Handbook
 
-A field manual from building software as a solo developer and as part of engineering teams: from idea to shipped product with efficient tokens, controlled context, and strong engineering ownership.
+A field manual from building software as a Staff Engineer at a tech company and as a solo developer across multiple projects: from idea to shipped product with efficient tokens, controlled context, and strong engineering ownership.
 
 This handbook documents a practical operating model for AI-assisted product engineering. It is designed for builders who want to use AI for planning, specification, implementation, review, and delivery without turning the project into one giant chat session.
 
@@ -12,7 +12,7 @@ AI is leverage. The engineer remains accountable.
 
 ## Origin
 
-This handbook is based on my experience building software both as a solo developer and as part of engineering teams using AI-assisted engineering workflows.
+This handbook is based on my experience building software as a Staff Engineer at a tech company and as a solo developer across multiple projects using AI-assisted engineering workflows.
 
 Those environments made the need for this workflow clear.
 
