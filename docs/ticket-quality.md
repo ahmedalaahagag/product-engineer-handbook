@@ -41,11 +41,43 @@ Verification:
 
 ## Good tickets are
 
+- one task
 - small
 - scoped
 - verifiable
 - easy to review
 - connected to a plan or specification
+- explicit about the files or surfaces to inspect first
+
+## One Ticket, One Task
+
+A ticket should describe one bounded task.
+
+If the work has multiple independent outcomes, split it into multiple tickets.
+
+A good execution ticket should be simple enough that the task can be understood without rediscovering the whole repository.
+
+## Exact Files First
+
+Every coding ticket should list the exact files or surfaces the execution session should inspect first.
+
+Prefer this:
+
+```text
+Affected files:
+- app/onboarding/index.tsx
+- lib/onboarding-store.ts
+```
+
+Avoid this:
+
+```text
+Find the onboarding files and fix persistence.
+```
+
+Exact files reduce token usage, reduce broad repository exploration, and prevent unrelated changes.
+
+If the exact files are not known yet, create a discovery ticket first instead of making the implementation ticket open-ended.
 
 ## Multi-Ticket Plans
 
@@ -71,4 +103,4 @@ The lane owns the execution context for the ticket.
 
 Do not ask the execution agent to infer the whole product.
 
-Give it a clear slice of work.
+Give it one clear, verifiable slice of work with the exact files or surfaces to inspect first.
