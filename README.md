@@ -62,18 +62,20 @@ The result is a workflow where expensive reasoning models clarify the work, and 
 
 ## Recommended Reading Order
 
-1. `docs/context-management.md`
-2. `docs/meta-repo-pattern.md`
-3. `docs/surface-mapping.md`
-4. `docs/execution-handover.md`
-5. `docs/cheap-model-delegation.md`
-6. `docs/worktree-isolation.md`
-7. `docs/human-review-and-manual-merge.md`
-8. `docs/session-log.md`
-9. `docs/lessons-to-rules.md`
-10. `templates/ticket.md`
-11. `templates/handover.md`
-12. `templates/verification.md`
+Start here if you want to copy the workflow into your own project.
+
+1. [Context Management](docs/context-management.md) — why sessions should be disposable and knowledge should live in files.
+2. [Meta Repository Pattern](docs/meta-repo-pattern.md) — how to separate planning and coordination from implementation repos.
+3. [Surface Mapping](docs/surface-mapping.md) — how to avoid backend-only or frontend-only thinking by mapping affected product surfaces.
+4. [Execution Handover](docs/execution-handover.md) — how to pass focused work from planning to implementation.
+5. [Cheap Model Delegation](docs/cheap-model-delegation.md) — how to reserve expensive models for reasoning and use cheaper models for bounded execution.
+6. [Worktree Isolation](docs/worktree-isolation.md) — how to keep agent work isolated and safe.
+7. [Human Review and Manual Merge](docs/human-review-and-manual-merge.md) — why humans remain the final approval gate.
+8. [Session Log](docs/session-log.md) — how to preserve cross-session and cross-agent continuity.
+9. [Lessons To Rules](docs/lessons-to-rules.md) — how to turn repeated lessons into standing rules.
+10. [Ticket Template](templates/ticket.md) — reusable structure for AI-executable work.
+11. [Handover Template](templates/handover.md) — reusable structure for execution handoffs.
+12. [Verification Template](templates/verification.md) — reusable structure for proving a change is done.
 
 ## Core Principle
 
