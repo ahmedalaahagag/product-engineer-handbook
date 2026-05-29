@@ -10,6 +10,16 @@ The goal:
 
 AI is leverage. The engineer remains accountable.
 
+## Companion Template
+
+This repository explains the workflow.
+
+[Agentic OS](https://github.com/ahmedalaahagag/agentic-os) is the copyable operational template that implements it.
+
+Use this handbook to understand the reasoning, tradeoffs, and rules.
+
+Use Agentic OS when you want a working meta repository structure with lanes, templates, handovers, verification, lessons, and project memory.
+
 ## Origin
 
 This handbook is based on my experience building software as a Staff Engineer at a tech company and as a solo developer across multiple projects using AI-assisted engineering workflows.
@@ -104,6 +114,8 @@ Execution should receive a refined handover, not the entire brainstorming histor
 ## Example Meta Workspace
 
 See [examples/product-meta](examples/product-meta) for a generic meta repository structure that mirrors this workflow.
+
+For a standalone copyable template, use [Agentic OS](https://github.com/ahmedalaahagag/agentic-os).
 
 The canonical shape is:
 
