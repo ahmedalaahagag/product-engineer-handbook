@@ -16,12 +16,13 @@ AI is used as leverage. The engineer remains accountable.
 Idea
 -> Goal
 -> Lane
+-> Brainstorming
 -> Plan
 -> Plan Review
 -> Specification
 -> Specification Review
 -> Ticket Decomposition
--> Ticket Review
+-> Human Ticket Review
 -> Execution Handover
 -> Execution Model Selection
 -> Execution
@@ -30,8 +31,24 @@ Idea
 -> Human Review
 -> Manual Merge
 -> Memory Update
+-> Archive Completed Context
 -> Next Ticket
 ```
+
+## What The Lane Does
+
+A lane gives the AI its working mode.
+
+It shapes the personality, role, priorities, and expected output.
+
+Examples:
+
+- product lane thinks about user value, scope, tradeoffs, and release shape
+- coding lane thinks about implementation, tests, and maintainability
+- ui-ux lane thinks about flows, screens, copy, and usability
+- marketing lane thinks about positioning, messaging, and distribution
+
+The lane prevents every task from becoming a coding task.
 
 ## What You Gain
 
@@ -59,6 +76,7 @@ This handbook pushes context into durable artifacts:
 - session logs
 - lessons learned
 - agent instructions
+- archive folders
 
 The result is a workflow where expensive reasoning models clarify the work, and cheaper or focused models execute bounded tasks.
 
@@ -90,9 +108,10 @@ Start here if you want to copy the workflow into your own project.
 12. [Human Review and Manual Merge](docs/human-review-and-manual-merge.md) — why humans remain the final approval gate.
 13. [Session Log](docs/session-log.md) — how to preserve cross-session and cross-agent continuity.
 14. [Lessons To Rules](docs/lessons-to-rules.md) — how to turn repeated lessons into standing rules.
-15. [Ticket Template](templates/ticket.md) — reusable structure for AI-executable work.
-16. [Handover Template](templates/handover.md) — reusable structure for execution handoffs.
-17. [Verification Template](templates/verification.md) — reusable structure for proving a change is done.
+15. [Archive Strategy](docs/archive-strategy.md) — how to keep the active workspace small as plans, specs, and tickets grow.
+16. [Ticket Template](templates/ticket.md) — reusable structure for AI-executable work.
+17. [Handover Template](templates/handover.md) — reusable structure for execution handoffs.
+18. [Verification Template](templates/verification.md) — reusable structure for proving a change is done.
 
 ## Core Principle
 
