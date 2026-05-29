@@ -17,33 +17,47 @@ git push
 -> pre-push hook
 -> ./scripts/verify.sh
 -> format
--> type check
+-> vet
 -> lint
--> build
--> tests
+-> test
 -> push allowed only if checks pass
 ```
 
-## What The Script Should Check
+## Core Checks
 
-A typical verification script includes:
+A minimal deterministic gate should run:
 
-- formatting
-- type checking
-- linting
-- build
-- unit tests
-- integration tests where practical
-- generated-code consistency
-- documentation or schema checks when relevant
+- format
+- vet
+- lint
+- tests
+
+For example:
+
+```bash
+./scripts/verify.sh
+```
+
+The exact commands depend on the stack, but the contract should stay stable.
+
+For a Go service, that might mean:
+
+```bash
+gofmt/goimports check
+go vet ./...
+golangci-lint run
+go test ./...
+```
+
+For a web or mobile repo, the same idea applies with the repo's own formatter, type checker, linter, and test runner.
 
 ## Why Deterministic Matters
 
-The script should not depend on model judgment.
+The gate should not depend on model judgment.
 
 It should produce a clear pass or fail.
 
-AI can explain failures, but the gate itself should be deterministic.
+AI can explain failures and propose fixes, but the verification gate itself should be deterministic.
 
 ## Why Pre-Push
 
@@ -76,11 +90,5 @@ The engineer defines the quality gate instead of trusting model confidence.
 ## Rule
 
 Every execution ticket should say which verification command proves the work is done.
-
-For example:
-
-```bash
-./scripts/verify.sh
-```
 
 The command becomes part of the contract between planning, execution, review, and merge.
