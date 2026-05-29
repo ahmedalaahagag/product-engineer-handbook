@@ -86,12 +86,13 @@ Start here if you want to copy the workflow into your own project.
 8. [Execution Handover](docs/execution-handover.md) — how to pass focused work from planning to implementation.
 9. [Cheap Model Delegation](docs/cheap-model-delegation.md) — how to reserve expensive models for reasoning and use cheaper models for bounded execution.
 10. [Worktree Isolation](docs/worktree-isolation.md) — how to keep agent work isolated and safe.
-11. [Human Review and Manual Merge](docs/human-review-and-manual-merge.md) — why humans remain the final approval gate.
-12. [Session Log](docs/session-log.md) — how to preserve cross-session and cross-agent continuity.
-13. [Lessons To Rules](docs/lessons-to-rules.md) — how to turn repeated lessons into standing rules.
-14. [Ticket Template](templates/ticket.md) — reusable structure for AI-executable work.
-15. [Handover Template](templates/handover.md) — reusable structure for execution handoffs.
-16. [Verification Template](templates/verification.md) — reusable structure for proving a change is done.
+11. [Deterministic Verification](docs/deterministic-verification.md) — how to use a pre-push gate for format, vet, lint, and tests.
+12. [Human Review and Manual Merge](docs/human-review-and-manual-merge.md) — why humans remain the final approval gate.
+13. [Session Log](docs/session-log.md) — how to preserve cross-session and cross-agent continuity.
+14. [Lessons To Rules](docs/lessons-to-rules.md) — how to turn repeated lessons into standing rules.
+15. [Ticket Template](templates/ticket.md) — reusable structure for AI-executable work.
+16. [Handover Template](templates/handover.md) — reusable structure for execution handoffs.
+17. [Verification Template](templates/verification.md) — reusable structure for proving a change is done.
 
 ## Core Principle
 
