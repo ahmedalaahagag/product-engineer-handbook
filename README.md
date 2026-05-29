@@ -35,14 +35,16 @@ Idea
 
 ## What You Gain
 
-- smaller AI contexts
-- lower model costs
-- clearer handoffs
-- better ticket quality
-- stronger review discipline
-- tool-agnostic project memory
-- less dependency on one long-running chat session
-- a repeatable path from idea to product
+| Problem | Common AI Workflow | Product Engineer Handbook |
+|---|---|---|
+| Context growth | One chat grows forever | Context is externalized into artifacts |
+| Cost | Premium models used for everything | Expensive models are reserved for reasoning-heavy work |
+| Continuity | Important knowledge is trapped in chat history | Plans, specs, tickets, handovers, and lessons preserve state |
+| Execution quality | Vague prompts produce vague changes | Tickets become small, scoped, and verifiable |
+| Review discipline | AI output is trusted too early | Human review and manual merge remain mandatory |
+| Scaling | One overloaded session handles everything | Work is split across lanes, tickets, and focused sessions |
+| Tool dependence | Workflow depends on one model or vendor | Artifacts can be used by Claude, Codex, Cursor, Gemini, local models, or future tools |
+| Product delivery | AI helps with isolated tasks | The workflow connects idea, planning, implementation, review, and shipping |
 
 ## Why Token and Context Efficiency Matter
 
