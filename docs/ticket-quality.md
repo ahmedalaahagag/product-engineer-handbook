@@ -47,6 +47,26 @@ Verification:
 - easy to review
 - connected to a plan or specification
 
+## Multi-Ticket Plans
+
+A plan may produce multiple tickets.
+
+Each ticket should land in the correct lane's `tickets/` directory.
+
+For example:
+
+```text
+product/plans/P1-onboarding-improvements.md
+product/tickets/T-001-activation-copy.md
+ui-ux/tickets/T-002-onboarding-flow-polish.md
+coding/tickets/T-003-persist-onboarding-progress.md
+release/tickets/T-004-beta-rollout-checklist.md
+```
+
+Do not keep generated tickets beside the plan unless the plan and every ticket belong to the same lane.
+
+The lane owns the execution context for the ticket.
+
 ## Rule
 
 Do not ask the execution agent to infer the whole product.
