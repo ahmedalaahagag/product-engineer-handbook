@@ -90,6 +90,14 @@ This is where expensive reasoning is most valuable.
 
 Execution should receive a refined handover, not the entire brainstorming history.
 
+## Example Meta Workspace
+
+See [examples/product-meta](examples/product-meta) for a generic meta repository structure that mirrors this workflow.
+
+It includes example agent instructions, a session log, lane folders, planning folders, ticket folders, handover folders, verification folders, lessons, and archive guidance.
+
+Use it as a starting point for building your own product meta workspace.
+
 ## Recommended Reading Order
 
 Start here if you want to copy the workflow into your own project.
