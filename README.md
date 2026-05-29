@@ -1,14 +1,27 @@
 # Product Engineer Handbook
 
-From idea to full product with efficient tokens, controlled context, and strong engineering ownership.
+From idea to shipped product with efficient tokens, controlled context, and strong engineering ownership.
 
-This repository documents a practical product engineering operating model for using AI without turning the project into one giant chat session.
+This handbook documents a practical operating model for AI-assisted product engineering. It is designed for builders who want to use AI for planning, specification, implementation, review, and delivery without turning the project into one giant chat session.
 
-The goal is simple:
+The goal:
 
-> Take an idea from rough concept to shipped product using plans, specs, tickets, handovers, verification, human review, and persistent project memory.
+> Move from rough idea to real product through lanes, brainstorming, plans, specs, tickets, handovers, verification, human review, and persistent project memory.
 
-AI is used as leverage. The engineer remains accountable.
+AI is leverage. The engineer remains accountable.
+
+## What You Gain
+
+| Problem | Common AI Workflow | Product Engineer Handbook |
+|---|---|---|
+| Context growth | One chat grows forever | Context is externalized into artifacts |
+| Cost | Premium models are used for everything | Expensive models are reserved for reasoning-heavy work |
+| Continuity | Knowledge is trapped in chat history | Plans, specs, tickets, handovers, and lessons preserve state |
+| Execution quality | Vague prompts produce vague changes | Tickets are small, scoped, and verifiable |
+| Review discipline | AI output is trusted too early | Human review and manual merge stay mandatory |
+| Scaling | One overloaded session handles everything | Work is split across lanes, tickets, and focused sessions |
+| Tool dependence | Workflow depends on one model or vendor | Artifacts work across Claude, Codex, Cursor, Gemini, local models, or future tools |
+| Product delivery | AI helps with isolated tasks | The workflow connects idea, planning, implementation, review, and shipping |
 
 ## Product Engineering Loop
 
@@ -35,39 +48,25 @@ Idea
 -> Next Ticket
 ```
 
-## What The Lane Does
+## Lanes
 
-A lane gives the AI its working mode.
-
-It shapes the personality, role, priorities, and expected output.
+A lane gives the AI its working mode: role, priorities, tone, and expected output.
 
 Examples:
 
-- product lane thinks about user value, scope, tradeoffs, and release shape
-- coding lane thinks about implementation, tests, and maintainability
-- ui-ux lane thinks about flows, screens, copy, and usability
-- marketing lane thinks about positioning, messaging, and distribution
+- `product` focuses on user value, scope, tradeoffs, and release shape.
+- `coding` focuses on implementation, tests, maintainability, and verification.
+- `ui-ux` focuses on flows, screens, copy, and usability.
+- `marketing` focuses on positioning, messaging, and distribution.
+- `release` focuses on rollout, risk, checklists, and launch coordination.
 
-The lane prevents every task from becoming a coding task.
+Lanes stop every task from becoming a coding task.
 
-## What You Gain
-
-| Problem | Common AI Workflow | Product Engineer Handbook |
-|---|---|---|
-| Context growth | One chat grows forever | Context is externalized into artifacts |
-| Cost | Premium models used for everything | Expensive models are reserved for reasoning-heavy work |
-| Continuity | Important knowledge is trapped in chat history | Plans, specs, tickets, handovers, and lessons preserve state |
-| Execution quality | Vague prompts produce vague changes | Tickets become small, scoped, and verifiable |
-| Review discipline | AI output is trusted too early | Human review and manual merge remain mandatory |
-| Scaling | One overloaded session handles everything | Work is split across lanes, tickets, and focused sessions |
-| Tool dependence | Workflow depends on one model or vendor | Artifacts can be used by Claude, Codex, Cursor, Gemini, local models, or future tools |
-| Product delivery | AI helps with isolated tasks | The workflow connects idea, planning, implementation, review, and shipping |
-
-## Why Token and Context Efficiency Matter
+## Context and Token Efficiency
 
 AI work gets expensive and unreliable when every session carries the entire project history.
 
-This handbook pushes context into durable artifacts:
+This workflow keeps durable context in files:
 
 - plans
 - specifications
@@ -78,15 +77,13 @@ This handbook pushes context into durable artifacts:
 - agent instructions
 - archive folders
 
-The result is a workflow where expensive reasoning models clarify the work, and cheaper or focused models execute bounded tasks.
+Expensive reasoning models clarify the work. Focused execution models receive bounded tasks.
 
 ## Planning and Specification Support
 
 Planning and specification work benefit from structured reasoning.
 
-In my own workflow, I use the Superpowers skill system to support brainstorming, plan writing, specification drafting, and specification review.
-
-This is where expensive reasoning is most valuable.
+In my own workflow, I use the Superpowers skill system for brainstorming, plan writing, specification drafting, and specification review.
 
 Execution should receive a refined handover, not the entire brainstorming history.
 
@@ -94,32 +91,45 @@ Execution should receive a refined handover, not the entire brainstorming histor
 
 See [examples/product-meta](examples/product-meta) for a generic meta repository structure that mirrors this workflow.
 
-It includes example agent instructions, a session log, lane folders, planning folders, ticket folders, handover folders, verification folders, lessons, and archive guidance.
+The canonical shape is:
 
-Use it as a starting point for building your own product meta workspace.
+```text
+product-meta/
+  product/{plans,specs,tickets,archive}/
+  coding/{plans,specs,tickets,archive}/
+  ui-ux/{plans,specs,tickets,archive}/
+  marketing/{plans,specs,tickets,archive}/
+  release/{plans,specs,tickets,archive}/
+  handovers/
+  verification/
+  lessons/
+  templates/
+```
+
+Use it as a starting point for your own product meta workspace.
 
 ## Recommended Reading Order
 
-Start here if you want to copy the workflow into your own project.
+Start here if you want to copy the workflow.
 
-1. [Context Management](docs/context-management.md) — why sessions should be disposable and knowledge should live in files.
-2. [What Worked](docs/what-worked.md) — the patterns that consistently improved AI-assisted delivery.
-3. [What Failed](docs/what-failed.md) — the traps that wasted time or created risk.
-4. [Delivery Loop](docs/delivery-loop.md) — the full operating loop from idea to shipped change.
-5. [Meta Repository Pattern](docs/meta-repo-pattern.md) — how to separate planning and coordination from implementation repos.
-6. [Surface Mapping](docs/surface-mapping.md) — how to avoid backend-only or frontend-only thinking by mapping affected product surfaces.
-7. [Ticket Quality](docs/ticket-quality.md) — why small, scoped, verifiable tickets improve AI execution.
-8. [Execution Handover](docs/execution-handover.md) — how to pass focused work from planning to implementation.
-9. [Cheap Model Delegation](docs/cheap-model-delegation.md) — how to reserve expensive models for reasoning and use cheaper models for bounded execution.
-10. [Worktree Isolation](docs/worktree-isolation.md) — how to keep agent work isolated and safe.
-11. [Deterministic Verification](docs/deterministic-verification.md) — how to use a pre-push gate for format, vet, lint, and tests.
-12. [Human Review and Manual Merge](docs/human-review-and-manual-merge.md) — why humans remain the final approval gate.
-13. [Session Log](docs/session-log.md) — how to preserve cross-session and cross-agent continuity.
-14. [Lessons To Rules](docs/lessons-to-rules.md) — how to turn repeated lessons into standing rules.
-15. [Archive Strategy](docs/archive-strategy.md) — how to keep the active workspace small as plans, specs, and tickets grow.
-16. [Ticket Template](templates/ticket.md) — reusable structure for AI-executable work.
-17. [Handover Template](templates/handover.md) — reusable structure for execution handoffs.
-18. [Verification Template](templates/verification.md) — reusable structure for proving a change is done.
+1. [Context Management](docs/context-management.md) — make sessions disposable and knowledge durable.
+2. [What Worked](docs/what-worked.md) — patterns that improved AI-assisted delivery.
+3. [What Failed](docs/what-failed.md) — traps that wasted time or created risk.
+4. [Delivery Loop](docs/delivery-loop.md) — the full loop from idea to shipped change.
+5. [Meta Repository Pattern](docs/meta-repo-pattern.md) — separate planning from implementation repos.
+6. [Surface Mapping](docs/surface-mapping.md) — map affected product surfaces before execution.
+7. [Ticket Quality](docs/ticket-quality.md) — make tickets small, scoped, and verifiable.
+8. [Execution Handover](docs/execution-handover.md) — pass focused work into implementation.
+9. [Cheap Model Delegation](docs/cheap-model-delegation.md) — reserve expensive models for reasoning.
+10. [Worktree Isolation](docs/worktree-isolation.md) — isolate agent work safely.
+11. [Deterministic Verification](docs/deterministic-verification.md) — use pre-push gates for format, vet, lint, and tests.
+12. [Human Review and Manual Merge](docs/human-review-and-manual-merge.md) — keep humans as the final approval gate.
+13. [Session Log](docs/session-log.md) — preserve continuity across sessions.
+14. [Lessons To Rules](docs/lessons-to-rules.md) — turn repeated lessons into standing rules.
+15. [Archive Strategy](docs/archive-strategy.md) — keep active context small as artifacts grow.
+16. [Ticket Template](templates/ticket.md) — structure executable work.
+17. [Handover Template](templates/handover.md) — structure execution handoffs.
+18. [Verification Template](templates/verification.md) — prove that work is done.
 
 ## Core Principle
 
