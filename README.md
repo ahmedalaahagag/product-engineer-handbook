@@ -20,6 +20,16 @@ Use this handbook to understand the reasoning, tradeoffs, and rules.
 
 Use Agentic OS when you want a working meta repository structure with lanes, templates, handovers, verification, lessons, and project memory.
 
+## Relationship to Dynamic Workflows
+
+This workflow is not a replacement for dynamic agent workflows.
+
+It is the control structure around them.
+
+Dynamic workflows can plan and execute more work in parallel, but they still need clear goals, scoped tickets, repo boundaries, verification steps, and human ownership.
+
+The stronger the agent, the more important the operating model becomes.
+
 ## Origin
 
 This handbook is based on my experience building software as a Staff Engineer at a tech company and as a solo developer across multiple projects using AI-assisted engineering workflows.
