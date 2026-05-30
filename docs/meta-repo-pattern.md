@@ -6,7 +6,7 @@ Planning, implementation, review, and architecture often get mixed together.
 
 That creates noisy context, weak boundaries, broad repository scans, and expensive execution.
 
-In multi-repo products, this gets worse because backend, mobile, web, ops, infrastructure, and landing-page work may all move independently.
+In multi-repo products, this gets worse because backend, mobile, web, and infrastructure work may all move independently.
 
 ## Pattern
 
@@ -36,9 +36,7 @@ workspace/
   product-meta/       # planning, tickets, handovers, memory
   product-server/     # backend implementation
   product-mobile/     # mobile implementation
-  product-web/        # web implementation
-  product-ops/        # admin/internal tools
-  product-landing/    # landing page or marketing site
+  product-web/        # web app, landing page, or marketing site
 ```
 
 ## Execution Boundary
