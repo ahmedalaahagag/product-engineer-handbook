@@ -62,7 +62,7 @@ Idea
 -> Human Ticket Review
 -> Execution Handover
 -> Execution Model Selection
--> Execution
+-> Execution in target repo
 -> Verification
 -> AI Review
 -> Human Review
